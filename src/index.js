@@ -29,7 +29,8 @@ function themeDefault() {
 themeDefault();
 
 themeSwitch.addEventListener('change', () => {
-    bodyTheme.classList.toggle(Theme.DARK)
+    bodyTheme.classList.toggle(Theme.DARK);
+    bodyTheme.classList.toggle(Theme.LIGHT);
 
     if (bodyTheme.classList.contains(Theme.DARK)) {
         localStorage.setItem('theme', Theme.DARK)
